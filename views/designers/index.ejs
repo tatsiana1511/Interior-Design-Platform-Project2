@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs') %>
+  <div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Location</th>
+                <th>Style</th>
+                <th>Projects</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% designers.forEach(function(d){ %>
+                <tr>
+                    <td><%= d.name %></td>
+                    <td><%= d.email %></td>
+                    <td><%= d.location %></td>
+                    <td><%= d.style %></td>
+                    <td><a href="/designers/<%= d._id %>/projects">Project</a></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+  </div>
+</body>
+</html>

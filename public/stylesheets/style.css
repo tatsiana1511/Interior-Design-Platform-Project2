@@ -1,0 +1,60 @@
+body {
+  padding: 0px;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: #AD4F4F;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+h3 {
+  color: white;
+  margin-left: 40px;
+  font-size: 30px;
+}
+
+#logout {
+  color: white;
+  font-size: 23px;
+  display: block;
+  margin-right: 40px;
+}
+
+.editprofile {
+  color: white;
+  font-size: 23px;
+  display: block;
+  margin-right: -350px;
+  text-decoration: none;
+}
+
+.background {
+  height: 100vh;
+  background-image: url("../images/Screen Shot 2022-01-11 at 6.19.41 PM.png");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.view-portfolio {
+  text-decoration: none;
+  color: #242526;
+  font-size: 30px;
+  position: absolute;
+  top: 40%;
+}
+
+
