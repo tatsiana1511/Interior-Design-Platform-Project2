@@ -6,7 +6,7 @@ module.exports = {
 }
 
 function viewProjects (req, res, next) {
-    Designer.findOne({_id: req.params.id}).exec((err, designer) => {
+    Designer.findOne({googleId: req.user.googleId}).exec((err, designer) => {
         res.render('projects/index', { user: req.user, projects: designer.projects })
     });
 }
