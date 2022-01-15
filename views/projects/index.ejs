@@ -1,0 +1,33 @@
+<%- include('../partials/header.ejs') %>
+  <div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Property type</th>
+                <th>Location</th>
+                <th>Completed</th>
+                <th>Style</th>
+                <th>Gallery</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% projects.forEach(function(p){ %>
+                <tr>
+                    <td><%= p.propertyType %></td>
+                    <td><%= p.location %></td>
+                    <td><%= p.completed %></td>
+                    <td><%= p.style %></td>
+                    <td><%= p.gallery %></td>
+                    <td>
+                        <form action="/projects/<%= p.id %>?_method=DELETE"
+                        id="delete-form" method="POST">
+                        <button type="submit">X</button>
+                        </form>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+  </div>
+</body>
+</html>

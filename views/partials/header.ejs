@@ -9,12 +9,12 @@
 </head>
 <body>
     <nav>
-       <h3>Interior Design Platform</h3>
+       <h3><a href="/" class="home-link">Interior Design Platform</a></h3>
             <% if (user) { %>
-                <a href="/editprofile" class="editprofile">Edit Profile</a>
-                <a href="/addproject" class="editprofile">Add Project</a>
+                <a href="/editprofile" class="header-link">Edit Profile</a>
+                <a href="/projectform" class="header-link">Add Project</a>
                 <a href="/logout" id="logout">Log Out</a>
             <% } else { %>
-                <a href="/auth/google">Login as designer</a>
+                <a href="/auth/google" class="login">Login as designer</a>
             <% } %>
     </nav>

@@ -1,5 +1,5 @@
 <%- include('../partials/header.ejs') %>
-  <div>
+  <div class="container">
     <table>
         <thead>
             <tr>
@@ -17,7 +17,9 @@
                     <td><%= d.email %></td>
                     <td><%= d.location %></td>
                     <td><%= d.style %></td>
-                    <td><a href="/designers/<%= d._id %>/projects">Project</a></td>
+                    <% if (d.projects && d.projects.length) { %>
+                        <td><a href="/designers/<%= d._id %>/projects">Projects</a></td>
+                    <% } %>
                 </tr>
             <% }) %>
         </tbody>

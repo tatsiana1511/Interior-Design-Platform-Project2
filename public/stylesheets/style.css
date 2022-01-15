@@ -4,19 +4,25 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.container {
+  height: 100vh;
+  background-color: #EAE0DC;
+}
+
 nav {
   height: 100px;
   width: 100%;
   background-color: #AD4F4F;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
 
-h3 {
+.home-link {
   color: white;
   margin-left: 40px;
   font-size: 30px;
+  text-decoration: none;
 }
 
 #logout {
@@ -24,13 +30,22 @@ h3 {
   font-size: 23px;
   display: block;
   margin-right: 40px;
+  text-decoration: none;
 }
 
-.editprofile {
+.header-link {
   color: white;
   font-size: 23px;
   display: block;
   margin-right: -350px;
+  text-decoration: none;
+}
+
+.login {
+  color: white;
+  font-size: 23px;
+  display: block;
+  margin-right: 30px;
   text-decoration: none;
 }
 
@@ -51,6 +66,31 @@ h3 {
   font-size: 30px;
   position: absolute;
   top: 40%;
+}
+
+input {
+  padding:10px;
+  margin: 10px;
+  width: 40%;
+}
+
+label {
+  padding: 10px;
+}
+
+table {
+  width: 70%;
+  margin: 0 15px 15px 15px;
+  padding-top: 15px;
+}
+
+td {
+  text-align: center;
+  font-size: 15px;
+}
+
+thead {
+  font-size: 18px;
 }
 
 

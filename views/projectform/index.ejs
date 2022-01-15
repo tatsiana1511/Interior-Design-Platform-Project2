@@ -1,0 +1,12 @@
+<%- include('../partials/header.ejs') %>
+<form action="/projectform" method="POST">
+    <label for="propertyType">Property type:</label><br>
+    <input type="text" name="propertyType" placeholder="Condo, House, Townhouse or other"><br>
+    <label for="location">Location:</label><br>
+    <input type="text" name="location" placeholder="Town, Country"><br><br>
+    <label for="completed">Project completed:</label><br>
+    <input type="date" name="completed" placeholder="Date"><br><br>
+    <label for="style">Style:</label><br>
+    <input type="text" name="style" placeholder="Minimalistic, Farm, Scandinavian, Modern, Classic"><br><br>
+    <input type="submit" value="Submit">
+  </form>
