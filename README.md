@@ -30,7 +30,7 @@ While developing I used ExpressJS, Mongoose, Passport, HTML, CSS.
 ---
 
 ## Where to find
-Whenever you need your space designed or you are a designer that wants to work on someone's project please visit my Interior Design Platform by clicking [here](https://project2-int-design.herokuapp.com/oauth2callback).
+Whenever you need your space designed or you are a designer that wants to work on someone's project please visit my Interior Design Platform by clicking [here](https://project2-int-design.herokuapp.com).
 
 ---
 
