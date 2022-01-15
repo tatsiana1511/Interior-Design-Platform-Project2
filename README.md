@@ -26,6 +26,7 @@ A **designer** can sign up to become a member of the platform and add the projec
 
 ## Technologies used
 While developing I used ExpressJS, Mongoose, Passport, HTML, CSS.
+The app has 2 data entities with 1:M relationship. The app currently performs 3 data operations: Create, Read, <s>Update</s>, Delete.
 
 ---
 
